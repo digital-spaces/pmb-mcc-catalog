@@ -11,8 +11,8 @@
     }
 
     #pmb-title-page-wrapper p {
+        margin-top: 150px;
         text-align: center;
-        margin-top: 200px;
     }
 
     @page {
@@ -21,6 +21,7 @@
     }
 
     @page main {
+        margin-top: 3cm;
         counter-reset: footnote;
 
         @footnotes {
@@ -38,12 +39,12 @@
         }
     }
     
-    body{
+    body {
         prince-footnote-policy: keep-with-line;
     }
 
     /* General styles*/
-    body{
+    body {
         font-family: 'Proza Libre';
     }
     
@@ -71,7 +72,7 @@
         background-color: #f2f2f2;
     }
 
-    h1,h2,h3,h4,h5,h6{
+    h1,h2,h3,h4,h5,h6 {
         font-family: 'Ovo';
         text-align: left;
         page-break-after:avoid;
@@ -81,6 +82,7 @@
     /* header and footer */
     .bannerlogo img {
         max-width: 200px;
+        margin-top: 20px;
     }
     .footer div {
         font-size: 10px !important;
@@ -99,13 +101,13 @@
         font-size: 14px;
         font-weight:bold;
     }
-    .pmb-toc-item.pmb-toc-depth-3{
+    .pmb-toc-item.pmb-toc-depth-3 {
         margin-left:3em;
     }
-    .pmb-toc-item.pmb-toc-depth-2{
+    .pmb-toc-item.pmb-toc-depth-2 {
         margin-left:2em;
     }
-    .pmb-toc-item.pmb-toc-depth-1{
+    .pmb-toc-item.pmb-toc-depth-1 {
         margin-left:1em;
     }
     #pmb-toc-list a {
@@ -120,15 +122,15 @@
     }
     
     /* Anthologies */
-    .pmb-anthology-wrapper{
-        break-before:left;
+    .pmb-anthology-wrapper {
+        break-before:page;
     }
-    .pmb-anthology h1.pmb-title{
+    .pmb-anthology h1.pmb-title {
         font-size:5em;
     }
 
     /* volumes */
-    .pmb-volume-wrapper{
+    .pmb-volume-wrapper {
         break-before:page;
     }
     .pmb-volume-wrapper > article > header > div > h1 {
@@ -136,7 +138,7 @@
     }
     
     /* parts */
-    .pmb-part-wrapper{
+    .pmb-part-wrapper {
         break-before:page;
     }
     .pmb-part-wrapper > article > header > div > h1 {
@@ -144,6 +146,9 @@
     }
     
     /*articles*/
+    .pmb-article-wrapper {
+        break-before:page;
+    }
     .pmb-article-wrapper > article > header > div > h1 {
         font-size: 22px;
     }
