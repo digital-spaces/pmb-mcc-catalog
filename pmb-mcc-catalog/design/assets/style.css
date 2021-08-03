@@ -89,7 +89,7 @@
         font-style: italic;
     }
 
-    /* toc, if it were used */
+    /* toc */
     #pmb-toc-wrapper {
         break-before:page;
     }
@@ -103,13 +103,16 @@
     }
     .pmb-toc-item.pmb-toc-depth-3 {
         margin-left:3em;
+        font-weight: normal;
     }
     .pmb-toc-item.pmb-toc-depth-2 {
         margin-left:2em;
+        font-weight: normal;
     }
     .pmb-toc-item.pmb-toc-depth-1 {
         margin-left:1em;
-    }
+        font-weight: normal;
+    }    
     #pmb-toc-list a {
         text-decoration: none;
         color: #000;
@@ -121,7 +124,8 @@
         content: leader('.') target-counter(attr(href), page) !important;
     }
     
-    /* Anthologies */
+    /* anthologies */
+    /**/
     .pmb-anthology-wrapper {
         break-before:page;
     }
@@ -129,27 +133,24 @@
         font-size:5em;
     }
 
-    /* volumes */
-    .pmb-volume-wrapper {
+    /*Level 1*/
+    .pmb-depth-0 {
         break-before:page;
     }
-    .pmb-volume-wrapper > article > header > div > h1 {
+    article.pmb-depth-0  h1 {
         font-size: 36px;
     }
     
-    /* parts */
-    .pmb-part-wrapper {
+    /*Level 2*/
+    .pmb-height-1.pmb-depth-1 {
         break-before:page;
     }
-    .pmb-part-wrapper > article > header > div > h1 {
+    article.pmb-depth-1  h1 {
         font-size: 28px;
     }
     
-    /*articles*/
-    .pmb-article-wrapper {
-        break-before:page;
-    }
-    .pmb-article-wrapper > article > header > div > h1 {
+    /*Level 3*/
+    article.pmb-depth-2  h1 {
         font-size: 22px;
     }
 
